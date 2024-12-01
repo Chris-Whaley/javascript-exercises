@@ -14,25 +14,16 @@ const sumAll = function(num1, num2) {
         return 'ERROR'
     };
 
-    const lowestNumber = Math.min(num1, num2);
-    const highestNumber = Math.max(num1, num2);
-    let outputSum = 0;
+    const lowestNumber = Math.min(num1, num2);  // start with lowest number
+    const highestNumber = Math.max(num1, num2);  // end with highest number
+    let outputSum = 0;  // add that number to a running total
 
     for (let index = lowestNumber; index <= highestNumber; index++) {
         outputSum += index;
     }
 
-    return outputSum;
-    // input 2 numbers
-    // start with lowest number
-    // end with highest number
-    // loop through every number in between
-    // add that number to a running total
-    // return that running total
-    
+    return outputSum;   
 };
 
 // Do not edit below this line
 module.exports = sumAll;
-
-sumAll(1, 4)
