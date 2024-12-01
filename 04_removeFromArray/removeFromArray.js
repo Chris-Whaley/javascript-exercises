@@ -5,7 +5,7 @@ const removeFromArray = function(inArray, ...removeAdditionalItems) {
     // outer loop through items to remove
     for (const removalItem of removeAdditionalItems){
         for (let index = 0; index < inArray.length; index++) {
-            if(outArray[index] == removalItem) {
+            if(outArray[index] === removalItem) {
                 delete outArray[index];
             }
             
