@@ -1,4 +1,4 @@
-const repeatString = function(inString, inNum) {
+const repeatString = function(inString = '', inNum = 0) {
     let outString = '';
 
     if (inNum < 0) {
