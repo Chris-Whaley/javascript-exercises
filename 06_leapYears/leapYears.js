@@ -3,6 +3,8 @@ const leapYears = function(inputYear) {
     // divisible by 4 and 400
     if (inputYear%400 == 0) {
         return true;
+    } else if (inputYear%4 == 0 && inputYear%100 != 0) {
+        return true;
     } else {
         return false;
     };
