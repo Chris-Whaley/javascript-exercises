@@ -22,5 +22,3 @@ const removeFromArray = function(inArray, ...removeAdditionalItems) {
 
 // Do not edit below this line
 module.exports = removeFromArray;
-
-removeFromArray([1, 2, 3, 4], 3, 2)
