@@ -19,6 +19,6 @@ const fibonacci = function(num) {
 
     return arr[numInput - 1];
 };
-// console.log( fibonacci(5) );
+
 // Do not edit below this line
 module.exports = fibonacci;
