@@ -1,4 +1,11 @@
 const fibonacci = function(num) {
+    if (num == 0) {
+        return 0
+    } else if (num < 0 ) {
+        return 'OOPS';
+    };
+
+    numInput = Number(num);
 
     arr = [1, 1, ];
     // example: 1, 1, 2, 3, 5, 8
@@ -10,7 +17,7 @@ const fibonacci = function(num) {
         arr[index] = element;
     }
 
-    return arr[num - 1];
+    return arr[numInput - 1];
 };
 // console.log( fibonacci(5) );
 // Do not edit below this line
